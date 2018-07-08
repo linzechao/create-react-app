@@ -9,17 +9,13 @@ import {
 } from 'react-router-dom'
 
 import Login from './views/login'
-import NotFound from './views/404'
-import Course from './views/course'
-import User from './views/user'
+import Main from './views/main'
 
 ReactDOM.render(
   <Router>
     <div>
-      <Route exact path="/" component={ Login }/>
-      <Route path="/404" component={ NotFound }/>
-      <Route path="/course" component={ Course }/>
-      <Route path="/user" component={ User }/>
+      <Route exact path="/" component={ Login } />
+      <Route path="/main" component={ Main } />
     </div>
   </Router>,
   document.getElementById('root')
